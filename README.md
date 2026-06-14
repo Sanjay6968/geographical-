@@ -166,16 +166,11 @@ registration problem**:
 Each image shows four panels: **Official (original) → Global Shift (seed) → Local NCC (refined) →
 Confidence panel**.  Red = official boundary, orange = global-shifted, green = final prediction.
 
-> Debug images are generated locally by running `solve.py --debug --debug-max 100`.
-> They are excluded from the repo (`outputs/` is gitignored) to keep the repo lightweight.
-> Sample panels (Official → Global Shift → Local NCC → Confidence):
->
-> | Plot | Village | Status | Confidence |
-> |------|---------|--------|------------|
-> | 1022 | vadnerbhairav | CORRECTED | 0.805 |
-> | 1007 | vadnerbhairav | CORRECTED | 0.871 |
-> | 1013 | vadnerbhairav | CORRECTED | 0.878 |
-> | 1050 | vadnerbhairav | CORRECTED | 0.845 |
+![Plot 1022 · vadnerbhairav · CORRECTED · conf=0.805](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/samples/vadnerbhairav/1022.png)
+
+![Plot 1007 · vadnerbhairav · CORRECTED · conf=0.871](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/samples/vadnerbhairav/1007.png)
+
+![Plot 1013 · vadnerbhairav · CORRECTED · conf=0.878](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/samples/vadnerbhairav/1013.png)
 
 ---
 
@@ -211,11 +206,11 @@ Confidence panel**.  Red = official boundary, orange = global-shifted, green = f
 
 #### Sample debug images — Malatavadi
 
-> | Plot | Village | Status | Confidence |
-> |------|---------|--------|------------|
-> | 1000 | Malatavadi | CORRECTED | 0.686 |
-> | 100 | Malatavadi | CORRECTED | 0.755 |
-> | 1001 | Malatavadi | CORRECTED | 0.555 |
+![Plot 1000 · Malatavadi · CORRECTED · conf=0.686](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/samples/Malatavadi/1000.png)
+
+![Plot 100 · Malatavadi · CORRECTED · conf=0.755](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/samples/Malatavadi/100.png)
+
+![Plot 1001 · Malatavadi · CORRECTED · conf=0.555](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/samples/Malatavadi/1001.png)
 
 ---
 
