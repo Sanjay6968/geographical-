@@ -223,7 +223,6 @@ Confidence panel**.  Red = official boundary, orange = global-shifted, green = f
 | vadnerbhairav | [data/vadnerbhairav/predictions.geojson](https://github.com/Sanjay6968/geographical-/blob/main/data/vadnerbhairav/predictions.geojson) | 2,457 | 2.2 MB |
 | Malatavadi | [data/Malatavadi/predictions.geojson](https://github.com/Sanjay6968/geographical-/blob/main/data/Malatavadi/predictions.geojson) | 2,508 | 1.5 MB |
 
-
 Each `predictions.geojson` row has:
 
 | Column | Type | Description |
@@ -233,27 +232,3 @@ Each `predictions.geojson` row has:
 | `confidence` | float / null | calibrated confidence in (0, 1]; `null` for flagged plots |
 | `method_note` | string | human-readable correction path (track, shift values, NCC stats) |
 | `geometry` | Polygon | corrected boundary in EPSG:4326 |
-
-### Debug images
-
-| Village | Folder | Count |
-|---------|--------|------:|
-| vadnerbhairav | `outputs/debug/vadnerbhairav/` (local only) | 100 PNGs |
-| Malatavadi | `outputs/debug/Malatavadi/` (local only) | 100 PNGs |
-
-
-Each PNG is named `<plot_number>.png` and contains a 4-panel layout:
-**Official → Global Shift → Local NCC → Confidence**
-
-### Input data (unchanged)
-
-| File | Description |
-|------|-------------|
-| `data/vadnerbhairav/input.geojson` | Official plot boundaries (input) |
-| `data/vadnerbhairav/imagery.tif` | Satellite imagery GeoTIFF |
-| `data/vadnerbhairav/boundaries.tif` | Auto-detected field boundary hints |
-| `data/vadnerbhairav/example_truths.geojson` | 6 hand-aligned ground truth plots |
-| `data/Malatavadi/input.geojson` | Official plot boundaries (input) |
-| `data/Malatavadi/imagery.tif` | Satellite imagery GeoTIFF |
-| `data/Malatavadi/boundaries.tif` | Auto-detected field boundary hints |
-| `data/Malatavadi/example_truths.geojson` | 3 hand-aligned ground truth plots |
