@@ -166,13 +166,16 @@ registration problem**:
 Each image shows four panels: **Official (original) → Global Shift (seed) → Local NCC (refined) →
 Confidence panel**.  Red = official boundary, orange = global-shifted, green = final prediction.
 
-![Plot 1022 · vadnerbhairav · corrected · conf=0.805](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/outputs/debug/vadnerbhairav/1022.png)
-
-![Plot 1007 · vadnerbhairav · corrected · conf=0.871](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/outputs/debug/vadnerbhairav/1007.png)
-
-![Plot 1013 · vadnerbhairav · corrected · conf=0.878](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/outputs/debug/vadnerbhairav/1013.png)
-
-![Plot 1050 · vadnerbhairav · corrected · conf=0.845](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/outputs/debug/vadnerbhairav/1050.png)
+> Debug images are generated locally by running `solve.py --debug --debug-max 100`.
+> They are excluded from the repo (`outputs/` is gitignored) to keep the repo lightweight.
+> Sample panels (Official → Global Shift → Local NCC → Confidence):
+>
+> | Plot | Village | Status | Confidence |
+> |------|---------|--------|------------|
+> | 1022 | vadnerbhairav | CORRECTED | 0.805 |
+> | 1007 | vadnerbhairav | CORRECTED | 0.871 |
+> | 1013 | vadnerbhairav | CORRECTED | 0.878 |
+> | 1050 | vadnerbhairav | CORRECTED | 0.845 |
 
 ---
 
@@ -208,11 +211,11 @@ Confidence panel**.  Red = official boundary, orange = global-shifted, green = f
 
 #### Sample debug images — Malatavadi
 
-![Plot 1000 · Malatavadi · corrected · conf=0.686](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/outputs/debug/Malatavadi/1000.png)
-
-![Plot 100 · Malatavadi · corrected · conf=0.755](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/outputs/debug/Malatavadi/100.png)
-
-![Plot 1001 · Malatavadi · corrected · conf=0.555](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/outputs/debug/Malatavadi/1001.png)
+> | Plot | Village | Status | Confidence |
+> |------|---------|--------|------------|
+> | 1000 | Malatavadi | CORRECTED | 0.686 |
+> | 100 | Malatavadi | CORRECTED | 0.755 |
+> | 1001 | Malatavadi | CORRECTED | 0.555 |
 
 ---
 
@@ -240,8 +243,8 @@ Each `predictions.geojson` row has:
 
 | Village | Folder | Count |
 |---------|--------|------:|
-| vadnerbhairav | [outputs/debug/vadnerbhairav/](https://github.com/Sanjay6968/geographical-/tree/main/outputs/debug/vadnerbhairav) | 100 PNGs |
-| Malatavadi | [outputs/debug/Malatavadi/](https://github.com/Sanjay6968/geographical-/tree/main/outputs/debug/Malatavadi) | 100 PNGs |
+| vadnerbhairav | `outputs/debug/vadnerbhairav/` (local only) | 100 PNGs |
+| Malatavadi | `outputs/debug/Malatavadi/` (local only) | 100 PNGs |
 
 
 Each PNG is named `<plot_number>.png` and contains a 4-panel layout:
