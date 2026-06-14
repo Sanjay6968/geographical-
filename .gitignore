@@ -21,7 +21,6 @@ desktop.ini
 
 # Temporary / scratch
 *.log
-transcripts/
 
 # Debug output images — large, not needed in repo
 outputs/
