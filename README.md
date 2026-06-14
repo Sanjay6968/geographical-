@@ -5,8 +5,12 @@ artifact of how old paper maps were georeferenced onto satellite imagery). **You
 plot, return your best estimate of its true on-the-ground boundary, plus a confidence, and flag
 the ones you can't place.**
 
-Read the problem in full at the site's **Understand** and **The task** pages first. This kit just
-removes the plumbing so you start at the interesting part.
+## Output files
+
+| Village | File | Plots | Size |
+|---------|------|------:|-----:|
+| vadnerbhairav | [data/vadnerbhairav/predictions.geojson](https://github.com/Sanjay6968/geographical-/blob/main/data/vadnerbhairav/predictions.geojson) | 2,457 | 2.2 MB |
+| Malatavadi | [data/Malatavadi/predictions.geojson](https://github.com/Sanjay6968/geographical-/blob/main/data/Malatavadi/predictions.geojson) | 2,508 | 1.5 MB |
 
 ## Setup
 
@@ -184,21 +188,4 @@ Confidence panel**.  Red = official boundary, orange = global-shifted, green = f
 
 ![Plot 1001 · Malatavadi · CORRECTED · conf=0.555](https://raw.githubusercontent.com/Sanjay6968/geographical-/main/samples/Malatavadi/1001.png)
 
----
 
-## Output files
-
-| Village | File | Plots | Size |
-|---------|------|------:|-----:|
-| vadnerbhairav | [data/vadnerbhairav/predictions.geojson](https://github.com/Sanjay6968/geographical-/blob/main/data/vadnerbhairav/predictions.geojson) | 2,457 | 2.2 MB |
-| Malatavadi | [data/Malatavadi/predictions.geojson](https://github.com/Sanjay6968/geographical-/blob/main/data/Malatavadi/predictions.geojson) | 2,508 | 1.5 MB |
-
-Each `predictions.geojson` row has:
-
-| Column | Type | Description |
-|--------|------|-------------|
-| `plot_number` | string | matches input `plot_number` exactly |
-| `status` | string | `"corrected"` or `"flagged"` |
-| `confidence` | float / null | calibrated confidence in (0, 1]; `null` for flagged plots |
-| `method_note` | string | human-readable correction path (track, shift values, NCC stats) |
-| `geometry` | Polygon | corrected boundary in EPSG:4326 |
