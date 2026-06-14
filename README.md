@@ -216,8 +216,6 @@ Confidence panel**.  Red = official boundary, orange = global-shifted, green = f
 
 ## Output files
 
-### Predictions — final GeoJSON submissions
-
 | Village | File | Plots | Size |
 |---------|------|------:|-----:|
 | vadnerbhairav | [data/vadnerbhairav/predictions.geojson](https://github.com/Sanjay6968/geographical-/blob/main/data/vadnerbhairav/predictions.geojson) | 2,457 | 2.2 MB |
